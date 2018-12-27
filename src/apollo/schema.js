@@ -1,15 +1,15 @@
-import studentSchemaDefs from './student/schema';
+import userSchemaDefs from './user/schema';
 import resolvers from './resolvers';
 import typeDefs from './typeDefs';
 
 const allTypeDefs = `
 ${typeDefs}
 type Query {
-  ${studentSchemaDefs.queries}
+  ${userSchemaDefs.queries}
 }
 
 type Mutation {
-  ${studentSchemaDefs.mutations}
+  ${userSchemaDefs.mutations}
 
 }
 

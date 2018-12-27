@@ -1,12 +1,12 @@
-import studentResolvers from './student/resolvers';
+import userResolvers from './user/resolvers';
 
 const resolvers = {
   Query: {
-    ...studentResolvers.queries,
+    ...userResolvers.queries,
   },
 
   Mutation: {
-    ...studentResolvers.mutations,
+    ...userResolvers.mutations,
   },
 };
 

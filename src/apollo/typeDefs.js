@@ -1,7 +1,7 @@
-import studentTypeDefs from './student/typeDefs';
+import userTypeDefs from './user/typeDefs';
 
 const typeDefs = `
-  ${studentTypeDefs}
+  ${userTypeDefs}
 `;
 
 export default typeDefs;
