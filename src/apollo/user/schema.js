@@ -1,6 +1,6 @@
 const queries = `
-  user ( id: String! ): user 
-  me: user 
+  user ( id: String! ): User 
+  me: User 
 `;
 
 const mutations = `
@@ -17,6 +17,8 @@ const mutations = `
     userId: String!
     password: String!
   ): Token
+
+  toggleUserCreated: User
     
 `;
 

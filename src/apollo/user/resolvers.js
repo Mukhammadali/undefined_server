@@ -53,6 +53,14 @@ const mutations = {
 
     return { jwt };
   },
+  toggleUserCreated: async (_root, _args, _ctx) => {
+    const updatedUser = await UserModel.findByIdAndUpdate(
+      _ctx.user.id,
+      { isUserCreated: true },
+      { new: true }
+    );
+    return updatedUser;
+  },
 };
 
 const userResolvers = {

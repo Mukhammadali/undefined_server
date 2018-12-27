@@ -9,12 +9,13 @@ const userTypeDefs = `
   }
   
 
-  type user {
+  type User {
     id: ID!
     userId: String!
     userName: String!
     role: String!
     createdDate: String!
+    isUserCreated: Boolean!
   }
 `;
 

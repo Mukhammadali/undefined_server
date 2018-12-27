@@ -8,6 +8,7 @@ const UserSchema = new Schema({
   password: { required: true, type: String },
   createdDate: { type: String, default: Date },
   role: { type: String, required: true },
+  isUserCreated: { type: Boolean, default: false },
 });
 
 export const UserModel = mongoose.model('user', UserSchema);
