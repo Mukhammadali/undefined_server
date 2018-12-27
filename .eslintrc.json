@@ -1,0 +1,58 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base", "prettier"],
+  "rules": {
+    "strict":"off",
+    "no-tabs": 0,
+    "prefer-const": 1,
+    "no-use-before-define": [1, { "functions": false }],
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "next|req|res|context|args|root|props" }],
+    "quotes": [2, "single", "avoid-escape"],
+    "no-plusplus":"off",
+    "eqeqeq": 1,
+    "no-param-reassign":"off",
+    "camelcase": "off",
+    "new-cap": 1,
+    "semi":"error",
+    "consistent-return":"off",
+    "array-callback-return":"off",
+    "no-underscore-dangle":"off",
+    "prefer-destructuring":["error",{"array":false,"object":true}],
+    "class-methods-use-this":"off",
+    "import/no-duplicates":"off",
+    "import/prefer-default-export":"off",
+    "arrow-body-style":"off",
+    "import/no-extraneous-dependencies": "off",
+    "prettier/prettier": [ "error", {
+      "singleQuote": true,
+      "useTabs": false,
+      "semi": true,
+      "bracketSpacing": true,
+      "tabWidth": 2,
+      "trailingComma": "es5"
+    }]
+  },
+  "globals": {
+    "document":true,
+    "__typename":true
+  },
+  "plugins": [
+    "import",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "root": ["."],
+        "alias":{
+          "src": "./src"
+        }
+      }
+    }
+  }
+}
